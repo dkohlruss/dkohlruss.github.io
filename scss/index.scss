@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,500|Lato');
 
 $header-font: 'Alegreya Sans SC', sans-serif;
 $body-font: 'Lato', sans-serif;
 
+
 h1 {
   font-family: $header-font;
+  font-weight: 100;
   font-size: 5em;
 
   margin: 0 auto 80px;
@@ -13,6 +15,14 @@ h1 {
 
 h2 {
   font-family: $header-font;
+  font-weight: 100;
+  font-size: 5em;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
 }
 
 html, body {
@@ -23,9 +33,33 @@ html, body {
   font-family: $body-font;
 }
 
+i {
+  margin: 0 10px;
+}
+
+footer {
+  background: rgb(50,50,50);
+  color: white;
+  text-align: center;
+
+  min-height: 100px;
+  margin: 0 auto;
+  padding: 30px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
 .container-fluid {
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 .fullscreen {
@@ -64,13 +98,21 @@ html, body {
 
   font-size: 20px;
 
-  z-index: 0;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  z-index: 2;
 }
 
 .welcome {
   position: relative;
   top: 50%;
-  left: -25px;
   transform: translateY(-50%);
   text-align: center;
 }
@@ -117,14 +159,12 @@ html, body {
 
 .top-socials {
   position: fixed;
-  z-index: 1000;
+  z-index: 2;
 
   width: 100%;
   height: 60px;
 
   text-align: center;
-  letter-spacing: 15px;
-  left: -15px;
 
   margin: 20px auto;
 
@@ -138,10 +178,26 @@ html, body {
   }
 }
 
+.modal-lg {
+  width: 70%;
+
+  img {
+    border-radius: 20px;
+  }
+
+  .row {
+    padding: 0 10%;
+  }
+}
+
+.modal-pad-bottom {
+  margin-bottom: 30px;
+}
+
 .down-arrow {
   position: fixed;
-  margin-left: 50%;
-  left: -40px;
+  margin: 0 50%;
+  left: -20px;
   bottom: 50px;
   background: rgba(0,0,0,0);
 

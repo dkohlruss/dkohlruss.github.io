@@ -7,6 +7,8 @@
     <script src="./js/jquery-3.1.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
     <div class="container-fluid">
         <video autoplay="" muted="" poster="" class="background-video" loop="">
             <source src="./img/skyline.mp4" type="video/mp4">
@@ -20,7 +22,7 @@
                     <a href="mailto:dkohlruss@gmail.com"><i class="fa fa-2x fa-envelope-o" aria-hidden="true" id="EMAIL"></i></a> <!-- Email -->
                 </span>
             </div>
-            <nav class="top-right">CONTACT</nav>
+            <nav class="top-right"><a href="#" data-toggle="modal" data-target="#myModal">About/Contact</a></nav>
 
             <div class="welcome">
                 <div class="logo"></div> <!-- background = logo, in css -->
@@ -32,6 +34,7 @@
         </section>
         <div class="container-fluid firstbelow projects">
             <section class="project" id="project1">
+                <h2>My Stuff</h2>
                 <div class="row project-entry center-block">
                     <div class="col-md-6">
                         <img class="img-responsive" src="../img/map.gif" alt="Google API Maps">
@@ -83,9 +86,60 @@
                     </div>
                 </div>
             </section>
+            <footer>
+                <div class="container center-block">
+                    <div class="col-md-12">
+                         <span>
+                            <a href="https://www.linkedin.com/in/david-kohlruss-35096b45" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a> <!-- Linkedin -->
+                            <a href="https://github.com/dkohlruss/" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a> <!-- Github -->
+                            <a href="https://twitter.com/dkohlruss" target="_blank"><i class="fa fa-2x fa-twitter" aria-hidden="true""></i></a> <!-- Twitter -->
+                            <a href="mailto:dkohlruss@gmail.com"><i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i></a> <!-- Email -->
+                        </span>
+                    </div>
+                    <span class="pull-right">Copyright 2017 David Kohlruss</span>
+                </div>
+            </footer>
         </div>
     </div>
 
-</head>
-<script src="js/index.js"></script>
+</body>
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">A little about me...</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 center-block modal-pad-bottom">
+                        <img class="center-block img-responsive" src="http://i.imgur.com/CNFZSN1l.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            Hello there!  I'm David Kohlruss, a Web Developer with a focus on the front-end.  I'm new to the game,
+                            but I'm always learning and striving to produce a high-quality product.  At the moment, I am working as
+                            a wellsite geologist in central Alberta while honing my skills.  My current goals include using React
+                            to deploy a fully functional site, learning full-stack web development with NodeJS, and working towards
+                            developing a deeper understanding of Javascript.
+                        </p>
+                        <p>
+                            I have experience working with Javascript libraries including jQuery, React, and Knockout, as well as
+                            knowledge of CSS3 & HTML5, along with a basic knowledge of Python.
+                        </p>
+                        <p>
+                            I'd love to hear from you!
+                        </p>
+                        <h4><a href="mailto:dkohlruss@gmail.com">dkohlruss@gmail.com</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
 </html>
