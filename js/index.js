@@ -16,4 +16,8 @@ $( window ).resize(function() {
     } else {
         $('.intro').css('background', 'none');
     }
+
+    if ($(window).height < 550) {
+        $('.logo').css('display','none');
+    }
 });

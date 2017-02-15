@@ -221,21 +221,17 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .no-mobile {
-    display: none;
-  }
-
   h1 {
     font-size: 3em;
   }
-}
 
-@media screen and (max-height: 400px) {
   .no-mobile {
     display: none;
   }
+}
 
-  .logo {
-    display: none;
+@media screen and (max-height: 600px) {
+  h1 {
+    font-size: 3em;
   }
 }
