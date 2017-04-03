@@ -153,6 +153,10 @@ footer {
   transform: rotate(-45deg);
   animation: 1s infinite alternate bounce; }
 
+  .privacy {
+    font-family: "Lato", sans-serif;
+  }
+
 @keyframes bounce {
   from {
     bottom: 50px; }
