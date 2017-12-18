@@ -1,3 +1,14 @@
+function getClassPosition(className) {
+	console.log(className);
+	var bottom_of_object = $(className).offset().top + $(className).outerHeight();
+	var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+	if (bottom_of_window > bottom_of_object) {
+		return true;
+	}
+	return false;
+}
+
 $(document).ready(function() {
 	// Make a call to API to spin up the backend for eCommerce web apple
 	$.get('https://ecommerceback.herokuapp.com/', function(data) {
@@ -12,6 +23,26 @@ $(document).ready(function() {
 	if ($(window).width() < 768) {
 		$('.intro').css('background', 'rgb(50,50,50)');
 	}
+});
+
+$(window).scroll(function() {
+	$('.project-entry').each(function(i) {
+		if (getClassPosition(this)) {
+			$(this).animate({ opacity: '1' }, 500);
+		}
+	});
+
+	$('.project-img').each(function(i) {
+		if (getClassPosition(this)) {
+			$(this).animate({ left: '30px' }, 500);
+		}
+	});
+
+	$('.project-desc').each(function(i) {
+		if (getClassPosition(this)) {
+			$(this).animate({ right: '30px' }, 500);
+		}
+	});
 });
 
 $(window).resize(function() {
