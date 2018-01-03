@@ -20,7 +20,10 @@ $(document).ready(function() {
 		.css('width', $intro.width());
 
 	if ($(window).width() < 768) {
-		$('.intro').css('background', 'rgb(50,50,50)');
+		$('.intro').css(
+			'background',
+			'linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.57) 88%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%)'
+		);
 	}
 });
 
@@ -51,7 +54,10 @@ $(window).resize(function() {
 		.css('width', $intro.width());
 
 	if ($(window).width() < 768) {
-		$('.intro').css('background', 'rgb(50,50,50)');
+		$('.intro').css(
+			'background',
+			'linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.57) 88%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%)'
+		);
 	} else {
 		$('.intro').css('background', 'none');
 	}
