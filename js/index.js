@@ -1,5 +1,4 @@
 function getClassPosition(className) {
-	console.log(className);
 	var bottom_of_object = $(className).offset().top + $(className).outerHeight();
 	var bottom_of_window = $(window).scrollTop() + $(window).height();
 
